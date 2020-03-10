@@ -1,0 +1,35 @@
+<view>
+    <view class="loading-modal" wx:if="{{showornot}}">
+        <view class="loading-text-wrap">
+            <image src="../images/loading.gif" class="load_img"></image>
+            <view class="loading-text">loading...</view>
+        </view>
+    </view>
+    <view wx:else>
+        <form bindsubmit='information'>
+            <view id='t1'>姓名</view>
+            <input wx:if="{{name != ''}}" id='k1' value='{{name}}' name="name"></input>
+            <input wx:else id='k1' placeholder='请输入您的姓名' name="name"></input>
+            <view id='t2'>手机</view>
+            <input wx:if="{{phone != ''}}" id='k2' value='{{phone}}' name="phone"></input>
+            <input wx:else id='k2' placeholder='请输入您的手机号' name="phone"></input>
+
+
+
+            <view id='t3'>情况描述</view>
+            <textarea wx:if="{{detail != ''}}"  maxlength='-1' value='{{detail}}' name='text' ></textarea>
+            <textarea id='k3' wx:else maxlength='-1' placeholder='请输入您的实际情况' name='text' ></textarea>
+            <!-- <view>
+                <view wx:for="{{imagepath}}">
+                <image src='{{item}}'></image>
+                </view>
+                <button bindtap='choose'>
+                    选择图片
+                </button>
+            </view> -->
+            <button id='submit' form-type='submit' type='primary' open-type='getUserInfo'>
+                提交申请
+            </button>
+        </form>
+    </view>
+</view>

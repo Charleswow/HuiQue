@@ -1,0 +1,16 @@
+
+#t1,#t2{
+    margin-top: 30rpx;
+    margin-left: 10rpx;
+    padding-left: 10rpx;
+    border-left: 10rpx solid #f2973a;
+}
+#k1,#k2{
+    border-bottom: 2rpx solid gainsboro;
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+}
+
+#k2{
+    margin-bottom: 20rpx;
+}

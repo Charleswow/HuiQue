@@ -1,0 +1,251 @@
+/**index.wxss**/
+
+/**index.wxss**/
+
+#que {
+    background-color: #308f49;
+    color: rgb(228, 147, 89);
+    font: bolder;
+    font-size: 140%;
+    padding-left: 50rpx;
+    /* border-left: 15rpx solid rgb(202, 118, 57); */
+}
+
+#gushi {
+    background-color: #f2973a;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 5rpx;
+    padding-bottom: 5rpx;
+    font-size: smaller;
+    font: smaller;
+}
+
+swiper {
+    height: 450rpx;
+}
+
+swiper-item image {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-container {
+    position: relative;
+}
+
+.swiper-container .swiper {
+    height: 450rpx;
+}
+
+.swiper-container .swiper .img {
+    width: 100%;
+    height: 100%;
+}
+
+#gushi {
+    background-color: #f2973a;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 5rpx;
+    padding-bottom: 5rpx;
+    font-size: smaller;
+    font: smaller;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    font-size: 40rpx;
+    text-align: center;
+}
+
+/* .name {
+    font-size: 50rpx;
+    display: inline-block;
+    width: 85%;
+    margin-left: 20rpx;
+    vertical-align: top;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.time{
+    font-size: 30rpx
+} */
+
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+
+.c_swiper {
+    background-color: #fff;
+    padding: 20rpx 30rpx;
+}
+
+.c_swiper>view {
+    font-size: 32rpx;
+}
+
+swiper {
+    height: 190rpx;
+}
+
+.c_items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 22%;
+    height: 180rpx;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.item view:not(.green_bg) {
+    font-size: 26rpx;
+    height: 40rpx;
+}
+
+.placeholder_item {
+    background-color: #fff;
+}
+
+.green_bg {
+    margin: 10rpx 20rpx;
+    background-color: #f2973a;
+    height: 80rpx;
+}
+
+.green_bg image {
+    width: 60rpx;
+    height: 60rpx;
+    margin-top: 10rpx;
+}
+
+.c_count {
+    display: flex;
+}
+
+.icon_count {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+#huodong {
+    margin-top: 20rpx;
+    margin-bottom: 10rpx;
+    background-color: white;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+}
+
+#t1, #t2, #t3 {
+    padding-bottom: 12rpx;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+}
+
+#t1:hover {
+    padding-bottom: 12rpx;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    border-bottom: 5rpx solid gray;
+   
+}
+
+#t2:hover {
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    border-bottom: 5rpx solid gray;
+}
+
+#t3:hover {
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    border-bottom: 5rpx solid gray;
+}
+
+#x1 {
+    border-top: 3rpx solid rgb(192, 189, 189);
+    display: table;
+    padding : 20rpx;
+   
+  
+    
+}
+
+#huotu {
+    width: 300rpx;
+    height: 200rpx;
+    float: left;
+    margin: 0rpx;
+    padding: 0rpx;
+    padding-right: 30rpx;
+    border: 0rpx;
+    border-radius: 3rpx;
+
+}
+
+#w1, #w2, #w3, #w4 {
+    
+    
+    margin: 0rpx;
+    padding: 0rpx;
+    border: 0rpx;
+
+    float: right;
+   
+}
+
+
+#w1{
+    font-weight: normal;
+    font-size: 35rpx;
+     
+}
+
+#w2{
+    font-weight: lighter;
+    font-size: 29rpx;
+   margin-top: 30rpx;
+
+  
+}
+
+#w3{
+    margin-top: 30rpx;
+    
+
+    font-weight: bolder;
+    font-size: 28rpx;
+}
+
+#w4{
+    font-weight: normal;
+     
+}
+
+#wuhuodong {
+    text-align: center;
+    margin-top: 180rpx;
+    font: larger;
+    font-size: larger;
+}

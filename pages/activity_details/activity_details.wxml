@@ -1,0 +1,36 @@
+<view wx:if="{{activity.status == '已结束' && activity.essay_url !=''}}">
+    <web-view src="{{activity.essay_url}}"></web-view>
+</view>
+
+<view wx:else>
+    <view class="loading-modal" wx:if="{{showornot}}">
+        <view class="loading-text-wrap">
+            <image src="../images/loading.gif" class="load_img"></image>
+            <view class="loading-text">loading...</view>
+        </view>
+    </view>
+    <view wx:else>
+        <view id='a1'>
+            {{activity.name}}
+        </view>
+        <view wx:if="{{activity.img != null}}">
+            <image id='pic' src='{{activity.img}}'></image>
+        </view>
+        <view id='b1'>活动地点: {{activity.place}}</view>
+        <view id='b2'>活动开始时间: {{activity.starttime}}</view>
+        <view id='b2'>活动结束时间: {{activity.endtime}}</view>
+        <view id='b2'>报名截止时间: {{activity.deadline}}</view>
+        <view id='b3' class='break'>
+            <text>活动详情：{{activity.detail}}</text>
+        </view>
+        <view wx:if="{{activity.remark != ''}}" id='b3'>P.S. {{activity.remark}}</view>
+        <view wx:if="{{activity.status == '报名中'}}">
+            <view wx:if="{{mystatus == 0}}">
+                <button id='a3' type='primary' open-type="getUserInfo" bindtap='signup'>我要报名</button>
+            </view>
+            <view wx:else>
+                <button id='a3' type='primary' open-type="getUserInfo" bindtap='cancle'>取消报名</button>
+            </view>
+        </view>
+    </view>
+</view>

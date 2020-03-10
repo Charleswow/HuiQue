@@ -1,0 +1,23 @@
+<!--pages/aboutus/aboutus.wxml-->
+<view>
+    <view class="loading-modal" wx:if="{{showornot}}">
+        <view class="loading-text-wrap">
+            <image src="../images/loading.gif" class="load_img"></image>
+            <view class="loading-text">loading...</view>
+        </view>
+    </view>
+    <view wx:else>
+    <view id='t1'>功能简介：</view>
+        <view id='a1' class='break'>
+            {{feature.msg1}}
+        </view>
+<view id='t2'>灰雀简介：</view>
+        <view id='a2' class='break'>
+             {{abouthuique.msg1}}
+        </view>
+        <view id='a3'>关于作者：</view>
+        <view id='b1' wx:for="{{author}}">
+            <view id='a4' name='name'>{{item.name}} 微信号：{{item.wxnumber}}</view>
+        </view>
+    </view>
+</view>

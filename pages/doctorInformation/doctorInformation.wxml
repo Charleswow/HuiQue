@@ -1,0 +1,20 @@
+<!--pages/doctorInformation/doctorInformation.wxml-->
+<view class="loading-modal" wx:if="{{showornot}}">
+    <view class="loading-text-wrap">
+        <image src="../images/loading.gif" class="load_img"></image>
+        <view class="loading-text">loading...</view>
+    </view>
+</view>
+<view wx:else>
+    <!-- 科室名称 -->
+    <view id='a'>
+        {{section.name}}
+    </view>
+    <!-- 科室下的医生 -->
+    <view id='b' wx:for="{{doctor}}">
+        <view id='c'>医生姓名：{{item.name}}</view>
+        <view>所在医院：{{item.corporation}}</view>
+        <view>工作科室：{{item.section}}</view>
+        <view>专业擅长：{{item.major}}</view>
+    </view>
+</view>

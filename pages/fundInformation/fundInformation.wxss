@@ -1,0 +1,96 @@
+/* pages/fundInformation/fundInformation.wxss */
+.break{
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+#quanbu{
+    background-color: #f2973a;
+}
+
+#t1{
+    background-color: #fa8c1d;
+    padding-left: 20rpx;
+    font-size: 150%;
+    font: bolder;
+    padding-top: 5rpx;
+    padding-bottom: 5rpx;
+}
+
+#z2,#t2,#t3,#a1,#a2,#shoucang{
+    background-color: white;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+    padding-left: 20rpx;
+    border-radius: 20rpx;
+}
+
+
+/* #t2,#t3,#a1,#a2
+{  padding-top: 20rpx;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+} */
+
+
+/* #p1,#p2{
+    background-color: white;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    padding-left: 20rpx;
+    border-radius: 20rpx;
+} */
+
+#c1,#c2{
+     background-color: white;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    padding-left: 20rpx;
+    border-radius: 20rpx;
+}
+
+
+#e1,#e2,#e3,#e4,#e5{
+    padding-left: 30rpx;
+    font-size: larger;
+    font: bolder;
+}
+
+#e1{
+    margin-top: 30rpx;
+}
+
+
+#p1,#p2{
+    width: 700rpx;
+    
+}
+
+/* #t2,#t3,#a1,#b1{
+    border-left: 10rpx solid #2d9148;
+} */
+
+
+#shoucang{
+    font-size: larger;
+    font: bolder;
+    position: fixed;
+    bottom: 0;
+    width: 700rpx;
+    background-color: #f7bf88;
+    border-radius: 60rpx;
+    
+}
+
+
+#m1{
+    padding-top: 50rpx;
+    padding-bottom: 50rpx;
+   color: #fa8c1d;
+}

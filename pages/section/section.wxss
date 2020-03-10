@@ -1,0 +1,48 @@
+/* pages/doctorInformation/doctorInformation.wxss */
+
+#a1{
+      font-size: 50rpx;
+     font-weight: 590;
+     margin-left: 35rpx;
+     margin-top: 30rpx;
+     margin-bottom: 50rpx;
+}
+
+
+#b1{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+ border-left:  10rpx solid #f5b97e;
+  margin-left: 30rpx;  
+}
+#c2{
+      font-weight: lighter;
+      margin-left: 40rpx;
+
+  
+}
+
+#p1{
+     float: right;
+     width: 40rpx;
+     height: 40rpx;
+     margin-top: -55rpx;
+    margin-right: 40rpx;
+}
+
+#sou{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+ border-left:  10rpx solid #f5b97e;
+  margin-left: 30rpx;  
+  padding-left: 50rpx;
+
+}
+
+#p2{
+     float: right;
+     width: 40rpx;
+     height: 40rpx;
+     margin-top: -75rpx;
+    margin-right: 40rpx;
+}

@@ -1,0 +1,31 @@
+/* pages/activity_details/activity_details.wxss */
+.break{
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+
+#b1,#b2,#b3{
+    margin-top: 30rpx;
+    margin-left: 10rpx;
+    padding-left: 10rpx;
+    border-left: 10rpx solid #f2973a;
+}
+
+
+#a1{
+      border-bottom: 2rpx solid #f2973a;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+}
+
+#a3{
+    margin-top: 40rpx;
+}
+
+#pic{
+    width: 750rpx;
+    height: 500rpx;
+    margin-top: 20rpx;
+    border: 2rpx solid black;
+}

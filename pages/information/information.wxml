@@ -1,0 +1,13 @@
+<view>
+    <form bindsubmit='information'>
+        <view>
+            <view id='t1'>姓名</view>
+            <input wx:if="{{name != ''}}" id='k1' value='{{name}}' name="name"></input>
+            <input wx:else id='k1' placeholder='请输入您的姓名' name="name"></input>
+            <view id='t2'>手机号</view>
+            <input wx:if="{{phoneNum != ''}}" id='k2' value='{{phoneNum}}' name="phoneNum" type='digit'></input>
+            <input wx:else id='k2' placeholder='请输入您的手机号' name="phoneNum" type='digit'></input>
+            <button id='submit' form-type='submit' type='primary' open-type='getUserInfo'>提交</button>
+        </view>
+    </form>
+</view>

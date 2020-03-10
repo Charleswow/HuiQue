@@ -1,0 +1,13 @@
+/* pages/expertInformation/expertInformation.wxss */
+
+#a{
+       margin-left: 30rpx;
+margin-right: 30rpx;
+background-color: #f1bf8d;
+border-radius: 50rpx;
+margin-top: 30rpx;
+margin-bottom: 30rpx;
+padding-left: 50rpx;
+padding-top: 25rpx;
+padding-bottom: 25rpx;
+}

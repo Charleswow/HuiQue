@@ -1,0 +1,56 @@
+/* pages/fundclassdetail/fundclassdetail.wxss */
+
+#jiantou{
+    max-height: 30rpx;
+    max-width: 30rpx;
+    float: right;
+    padding-right: 40rpx;
+    text-align: center;
+    padding-top: 10rpx;
+}
+
+#bing{
+    padding-left: 50rpx;
+}
+
+
+#b1{
+    border: 5rpx solid #f2973a;
+    padding-top: 50rpx;
+    padding-bottom: 50rpx;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+   
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    border-radius: 50rpx;
+
+}
+
+#q1{
+    text-align: center;
+    margin-top: 40rpx;
+    margin-bottom: 40rpx;
+    background-color: #f3cca6;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    border-radius: 60rpx;
+    padding-top: 40rpx;
+    padding-bottom: 40rpx;
+}
+
+
+#p1{
+    width: 30rpx;
+    height: 30rpx;
+    padding-top: 10rpx;
+    vertical-align: middle;
+   float: right;
+   margin-right: 100rpx;
+}
+
+
+#c1{
+  
+}
+

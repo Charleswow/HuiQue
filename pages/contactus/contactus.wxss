@@ -1,0 +1,34 @@
+/* pages/contactus/contactus.wxss */
+
+
+#a1{
+
+      margin-top: 30rpx;
+    margin-left: 10rpx;
+    padding-left: 10rpx;
+    border-left: 10rpx solid #54c973;
+}
+
+
+
+
+#b1{
+    margin-top: 50rpx;
+    background-color: rgb(56, 189, 56);
+}
+
+
+#c1{
+     margin-top: 40rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    padding-left: 15rpx;
+    border-radius: 15rpx;
+    background-color: white;
+}
+
+#a3,#a4{
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+}
+

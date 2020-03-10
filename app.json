@@ -1,0 +1,54 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/login/login",
+        "pages/information/information",
+        "pages/fundDetail/fundDetail",
+        "pages/help/help",
+        "pages/activity_details/activity_details",
+        "pages/fundInformation/fundInformation",
+        "pages/fundclassdetail/fundclassdetail",
+        "pages/myactivity/myactivity",
+        "pages/contactus/contactus",
+        "pages/aboutus/aboutus",
+        "pages/myfund/myfund",
+        "pages/section/section",
+        "pages/doctorInformation/doctorInformation",
+        "pages/expertInformation/expertInformation",
+        "pages/experimentInformation/experimentInformation",
+        "pages/allhelp/allhelp"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#f2973a",
+        "navigationBarTitleText": "灰雀",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "backgroundColor": "#fff",
+        "borderStyle": "white",
+        "color": "#676767",
+        "selectedColor": "#f2973a",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "活动",
+                "iconPath": "pages/images/logo_grey.png",
+                "selectedIconPath": "pages/images/logo_0.png"
+            },
+            {
+                "pagePath": "pages/allhelp/allhelp",
+                "text": "信息查询",
+                "iconPath": "pages/images/classification_grey_0.png",
+                "selectedIconPath": "pages/images/classification_0.png"
+            },
+            {
+                "pagePath": "pages/login/login",
+                "text": "我",
+                "iconPath": "pages/images/mine_grey.png",
+                "selectedIconPath": "pages/images/mine_green.png"
+            }
+        ]
+    }
+}

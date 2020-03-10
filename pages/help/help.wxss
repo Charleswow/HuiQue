@@ -1,0 +1,20 @@
+#t1,#t2,#t3{
+    margin-top: 30rpx;
+    margin-left: 10rpx;
+    padding-left: 10rpx;
+    border-left: 10rpx solid #f2973a;
+}
+
+#k1,#k2{
+    border-bottom: 2rpx solid gainsboro;
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+    
+}
+
+#k3{
+    margin-top: 10rpx;
+   border: 2rpx solid gainsboro;
+    width: 750rpx;
+    
+}

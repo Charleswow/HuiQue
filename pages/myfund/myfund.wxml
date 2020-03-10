@@ -1,0 +1,24 @@
+<view>
+    <view class="loading-modal" wx:if="{{showornot}}">
+        <view class="loading-text-wrap">
+            <image src="../images/loading.gif" class="load_img"></image>
+            <view class="loading-text">loading...</view>
+        </view>
+    </view>
+    <view wx:else>
+        <view wx:if="{{fund.length == 0}}">
+            暂无基金
+        </view>
+        <view wx:else>
+            <view wx:for="{{fund}}" wx:for-item="fund">
+                <view id='b1'>
+                    <navigator url='../fundInformation/fundInformation?name={{fund.className}}&fundname={{fund.fundDetail.name}}'>
+                        <text id='bing'>{{fund.fundDetail.name}}</text>
+                        <image id='jiantou' src='../images/jiantou(1).png'></image>
+                        <!-- <image id='s2' src="../images/icon_arrow_right.svg"></image> -->
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

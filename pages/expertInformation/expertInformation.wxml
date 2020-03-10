@@ -1,0 +1,9 @@
+<!--pages/expertInformation/expertInformation.wxml-->
+<view>
+    <view id='a' wx:for="{{doctor}}">
+        <view>医生姓名：{{item.name}}</view>
+        <view>所在医院：{{item.corporation}}</view>
+        <view>工作科室：{{item.section}}</view>
+        <view>专业擅长：{{item.major}}</view>
+    </view>
+</view>

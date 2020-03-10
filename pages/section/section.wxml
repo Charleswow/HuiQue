@@ -1,0 +1,48 @@
+<view class="loading-modal" wx:if="{{showornot}}">
+    <view class="loading-text-wrap">
+        <image src="../images/loading.gif" class="load_img"></image>
+        <view class="loading-text">loading...</view>
+    </view>
+</view>
+<!-- 搜索框 -->
+<view wx:else>
+    <view class="weui-search-bar">
+        <view class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                <input class="weui-search-bar__input" placeholder='请输入病名' bindinput='input' />
+                <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                    <icon type="clear" size="14"></icon>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view wx:if="{{search.length != 0}}">
+        <view id='sou'  wx:for="{{search}}">
+            <navigator url='../expertInformation/expertInformation?name={{item}}'>
+            {{item}}
+            </navigator>
+        </view>
+         <image id='p2' src='../images/箭头.png'></image>
+    </view>
+    <view wx:else hidden='{{hidden}}'>
+        暂无相关疾病的医生信息
+    </view>
+</view>
+<view>
+    <view wx:if="{{search.length == 0}}">
+        <view>
+            <view id='a1'>科室</view>
+        </view>
+        <view wx:for="{{section}}">
+            <view id='b1'>
+                <navigator url='../doctorInformation/doctorInformation?name={{item}}'>
+                    <view id='b2'>
+                        <text id='c2'>{{item}}\n</text>
+                         <image id='p1' src='../images/箭头.png'></image>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,64 @@
+<!--
+hidden="{{ loadingModalHide }}"
+    本页展示使用灰雀的小程序的人数，灰雀举办过的活动数，灰雀所了解的基金数
+    活动展示灰雀当前举办的活动，点击即将举办的活动跳转到活动报名的页面
+    点击已结束的活动，跳转到活动举办的成果页（比如照片等等）
+-->
+<!--index.wxml-->
+<view class="container">
+    <view class="loading-modal" wx:if="{{showornot}}">
+        <view class="loading-text-wrap">
+            <image src="../images/loading.gif" class="load_img"></image>
+            <view class="loading-text">loading...</view>
+        </view>
+    </view>
+    <view wx:else>
+        <view id='s1' class="swiper-container">
+            <swiper id='s2' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}" class="swiper">
+                <block wx:for="{{imgUrls}}" wx:key="unique">
+                    <swiper-item>
+                        <image src="{{item}}" class="img" bindtap="swipclick" />
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <!-- <view class='c_title'>
+            <text>全部活动</text>
+        </view> -->
+        <view id='huodong' class="content">
+            <view  style="flex:1;height:50rpx;font-size=30rpx;" bindtap='signup'>
+            <text id='t1'> 报名中 </text>
+            </view>
+            <view  style="flex:1;height:50rpx;font-size=30rpx;" bindtap='loading'><text id='t2'> 进行中</text></view>
+            <view  style="flex:1;height:50rpx;font-size=30rpx" bindtap='end'><text id='t3'> 已结束 </text></view>
+        </view>
+        <view id='wuhuodong' wx:if="{{!activity_list[0]}}">暂无活动</view>
+        <view wx:else>
+            <view  wx:for="{{activity_list}}" wx:key="{{item.activityid}}">
+                <navigator url="../activity_details/activity_details?id={{item.activityid}}">
+
+                    <view id='x1' wx:if="{{item.img != null}}">
+                        <image id='huotu' src='{{item.img}}'></image>
+                        <!--如果有活动图片可与考虑添加image wx:if="{{item.user.avatar && item.flag}}" src="{{item.user.avatar}}" class='icon_topic'></image>
+                        <image wx:else src="../images/icon_topic.png" class='icon_topic'></image-->
+
+                        <text id="w1">{{item.name}} \n</text>
+
+                        <!-- <text id='w2'>{{item.detail}}\n</text> -->
+                        <text id='w2'>{{item.place}}\n</text>
+
+                        <text id='w3'>{{item.deadline}}报名截止</text>
+                        <!-- <text id='w4'>{{item.place}}</text> -->
+                        <!-- <text id='w3'>   报名截止时间：{{item.deadline}}</text> -->
+
+
+
+
+                    </view>
+
+                </navigator>
+
+            </view>
+        </view>
+    </view>
+</view>

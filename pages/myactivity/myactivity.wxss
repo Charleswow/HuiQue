@@ -1,0 +1,10 @@
+/* pages/myactivity/myactivity.wxss */
+#x1{
+  border: 5rpx solid #f2973a;
+  border-radius: 20rpx;
+  margin: 10rpx;
+}
+
+#a1{
+    margin-left: 520rpx;
+}

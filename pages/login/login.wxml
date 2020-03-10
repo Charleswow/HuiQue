@@ -1,0 +1,98 @@
+<view>
+
+    <view id='z1' class='mine'>
+        <view id='a1' class="mine_logo">
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <view id='a2' class="login">
+            <open-data type="userNickName"></open-data>
+        </view>
+    </view>
+
+
+
+    <view class='information'>
+        <view class='login'>
+            <navigator id='t1' url='../information/information'>
+
+                <view id='b1'>
+                    <image id='p1' src="../images/wanshanxinxi.png"></image>
+                    <text id='c1'>完善信息</text>
+                </view>
+            </navigator>
+        </view>
+    </view>
+
+
+    <view class='information'>
+        <view class='login'>
+            <navigator id='t2' url='../myactivity/myactivity'>
+                <view id='b2'>
+                    <image id='p2' src="../images/huodong.png"></image>
+                    <text id='c2'>我的活动</text>
+                </view>
+            </navigator>
+        </view>
+    </view>
+
+    <view class='information'>
+        <view class='login'>
+            <navigator id='t2' url='../myfund/myfund'>
+                <view id='b5'>
+                    <image id='p2' src="../images/jijin.png"></image>
+                    <text id='c2'>我的基金</text>
+                </view>
+            </navigator>
+        </view>
+    </view>
+
+
+    <view class='information'>
+        <view class='login'>
+
+            <navigator id='t3' url='../contactus/contactus'>
+                <view id='b3'>
+                    <image id='p3' src="../images/bangzhu.png"></image>
+
+                    <text id='c3'>帮助反馈</text>
+                </view>
+            </navigator>
+        </view>
+    </view>
+
+
+
+    <view class='information'>
+        <view class='login'>
+
+            <navigator id='t4' url='../aboutus/aboutus'>
+                <view id='b4'>
+                    <image id='p4' src="../images/guanyu.png"></image>
+
+                    <text id='c4'>关于灰雀</text>
+                </view>
+            </navigator>
+        </view>
+    </view>
+
+
+
+
+
+
+    <!-- <view id='b2' class='information'>
+        <view class='login'>
+            <navigator id='t2' url='../myactivity/myactivity'>我的活动</navigator>
+        </view>
+    </view>
+    <view id='b3' class='information'>
+        <view class='login'>
+            <navigator id='t3' url='../contactus/contactus'>帮助反馈</navigator>
+        </view>
+    </view>
+    <view id='b4' class='information'>
+        <view class='login'>
+            <navigator id='t4' url='../aboutus/aboutus'>关于灰雀</navigator>
+        </view>
+    </view> -->
+</view>

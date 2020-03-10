@@ -1,0 +1,19 @@
+<view>
+    <view>
+        <view>
+            <view wx:if="{{fund.length == 0}}">相关公益基金信息正在更新中，敬请期待</view>
+            <view wx:else>
+                <view wx:for="{{fund}}" wx:for-item="fund">
+                    <view>
+                        <navigator url='../fundInformation/fundInformation?name={{name}}&fundname={{fund.name}}'>
+                            <view id='b1'>
+                                <text id='bing'>{{fund.name}}</text>
+                                <image id='jiantou' src='../images/jiantoushen.png'></image>
+                            </view>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

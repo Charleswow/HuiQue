@@ -1,0 +1,25 @@
+/* pages/myfund/myfund.wxss */
+
+#jiantou{
+    max-height: 30rpx;
+    max-width: 30rpx;
+    float: right;
+    padding-right: 40rpx;
+    text-align: center;
+    padding-top: 10rpx;
+}
+
+#bing{
+    padding-left: 50rpx;
+}
+
+
+#b1{
+    border: 5rpx solid #f2973a;
+    padding-top: 21rpx;
+    padding-bottom: 21rpx;
+    margin-top: 4rpx;
+    margin-bottom: 4rpx;
+    margin-left: 2rpx;
+    border-radius: 15rpx;
+}

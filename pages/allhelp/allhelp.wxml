@@ -1,0 +1,99 @@
+<!--pages/allhelp/allhelp.wxml-->
+
+
+<view>
+    <!-- 搜索栏 -->
+    <!-- <view class="weui-search-bar">
+        <view class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                <input class="weui-search-bar__input" placeholder='请输入病名' bindinput='input' />
+                <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                    <icon type="clear" size="14"></icon>
+                </view>
+            </view>
+        </view>
+    </view> -->
+    <!-- 搜索结果展示 -->
+    <!-- <view> -->
+    <!-- 搜索到的基金展示 -->
+    <!-- <block> -->
+    <!-- <view wx:if="{{fundsearch != []}}">
+                <view>公益基金</view>
+            </view>
+            <view wx:for="{{fundsearch}}">
+                <navigator url='../fundclassdetail/fundclassdetail?name={{item.name}}'>
+                    <view>
+                        <image src='{{item.img}}'></image>
+                        <text>{{item.name}}\n</text>
+                        <text>{{item.num}}条基金信息</text>
+                        <image src='../images/jiantoushen.png'></image>
+                    </view>
+                </navigator>
+            </view>
+        </block> -->
+    <!-- 搜索到的医生 -->
+    <!-- <block> -->
+    <!-- <view wx:if="{{doctorsearch != []}}">
+                <view>医生信息</view>
+            </view>
+            <view wx:for="{{doctorsearch}}">
+                <navigator url='../fundclassdetail/fundclassdetail?name={{item.name}}'>
+                    <view>
+                        <image src='{{item.img}}'></image>
+                        <text>{{item.name}}\n</text>
+                        <text>{{item.num}}条医生信息</text>
+                        <image src='../images/jiantoushen.png'></image>
+                    </view>
+                </navigator>
+            </view>
+        </block> -->
+    <!-- 搜索到的实验 -->
+    <!-- <block>
+            <view wx:if="{{expersearch != []}}">
+                <view>临床实验信息</view>
+            </view>
+            <view wx:for="{{expersearch}}">
+                <navigator url='../fundclassdetail/fundclassdetail?name={{item.name}}'>
+                    <view>
+                        <image src='{{item.img}}'></image>
+                        <text>{{item.name}}\n</text>
+                        <text>{{item.num}}条实验信息</text>
+                        <image src='../images/jiantoushen.png'></image>
+                    </view>
+                </navigator>
+            </view>
+        </block>
+    </view> -->
+
+
+    <view>
+        <view id='a'  wx:if="{{fund}}">
+            <  navigator url='../fundDetail/fundDetail'>
+              <text id='t1' >基金信息查询</text>  
+              <image id='p1' src='../images/箭头.png'></image>
+            </navigator>
+        </view>
+        <view id='s1' wx:else>敬请期待</view>
+        <view id='a' wx:if="{{doctor}}">
+            <navigator url='../section/section'>
+             <text id='t1' >医生信息查询</text>  
+              <image id='p1' src='../images/箭头.png'></image>
+                
+            </navigator>
+        </view>
+        <view id='s1' wx:else>
+            敬请期待
+        </view>
+        <view id='a' wx:if="{{experiment}}">
+            <navigator url='../experimentInformation/experimentInformation'>
+             <text id='t1' > 临床实验信息查询</text>  
+              <image id='p1' src='../images/箭头.png'></image>
+               
+            </navigator>
+        </view>
+        <view id='s1' wx:else>
+            敬请期待
+        </view>
+    </view>
+</view>

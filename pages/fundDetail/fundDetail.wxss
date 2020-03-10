@@ -1,0 +1,118 @@
+/* #jiantou{
+    max-height: 30rpx;
+    max-width: 30rpx;
+    float: right;
+    padding-right: 40rpx;
+    text-align: center;
+    padding-top: 10rpx;
+}
+
+#bing{
+    padding-left: 50rpx;
+}
+
+
+#b1{
+    border: 5rpx solid #57bc72;
+    
+    border-radius: 15rpx;
+}
+ */
+
+
+#a1{
+     font-size: 50rpx;
+     font-weight: 590;
+     margin-left: 35rpx;
+     margin-top: 30rpx;
+     
+}
+
+#a2{
+
+   font-weight: lighter;
+   font-size: 25rpx;
+  margin-left: 35rpx;
+  margin-top: 30rpx;
+}
+
+#b1{
+    
+    background-color: white;
+    
+     display: table; 
+    padding : 20rpx;
+    width: 650rpx;
+    margin: 30rpx;
+    border-radius: 10rpx;
+    
+}
+
+#c1{
+    width: 120rpx;
+    height: 120rpx;
+    float: left;
+    margin: 0rpx;
+    padding: 0rpx;
+    padding-right: 30rpx;
+    border: 0rpx;
+}
+
+#c2{
+   
+    margin: 0rpx;
+    padding: 0rpx;
+    border: 0rpx;
+    
+
+}
+
+#c3{
+   
+    margin: 0rpx;
+    padding: 0rpx;
+    border: 0rpx;
+    font-weight: lighter;
+    font-size: smaller;
+    line-height: 80rpx;
+    
+}
+
+#c4{
+    margin: 0rpx;
+    padding: 0rpx;
+    border: 0rpx;
+   width: 30rpx;
+   height: 30rpx;
+   
+   vertical-align: middle;
+   float: right;
+   
+
+}
+
+
+
+#q2{
+    
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: -60rpx;
+  margin-right: 20rpx;
+}
+#w1{
+padding-left: 20rpx;
+border: 5rpx solid #e9a45f;
+border-radius: 30rpx;
+}
+
+#q1{
+margin-top: 10rpx;
+}
+
+#search{
+    position: fixed;
+    top: 0;
+}

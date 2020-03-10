@@ -1,0 +1,75 @@
+<view id='quanbu'>
+    <view class="loading-modal" wx:if="{{!fund}}">
+        <view class="loading-text-wrap">
+            <image src="../images/loading.gif" class="load_img"></image>
+            <view class="loading-text">loading...</view>
+        </view>
+    </view>
+    <view wx:else class='break'>
+        <view id='t1'>
+            <text>{{fund.name}}</text>
+        </view>
+        <view id='z1'>
+            <view id='e1'>备案号：</view>
+                <view id='t2'>
+                    <text>{{fund.record_num}}</text>
+                </view>
+        </view>
+        <view id='z1'>
+            <view wx:if="{{fund.people != ''}}">
+                <view id='e1'>资助对象：</view>
+                <view id='t2'>
+                    <text>{{fund.people}}</text>
+                </view>
+            </view>
+            <view wx:if="{{fund.mode != ''}}">
+                <view id='e2'>资助方式：</view>
+                <view id='t3'>
+                    <text>{{fund.mode}}</text>
+                </view>
+            </view>
+            <view bindtap='preview'>
+                <view id='e3' wx:if="{{fund.process_text != 'https://bgbsk.cn/download/fund_material' || fund.process_img != ''}}">申请流程<text wx:if="{{fund.process_img != 'https://bgbsk.cn/download/fund_material'}}">(点击复制图片链接)：</text></view>
+                <view id='a1'>
+
+                    <view wx:if="{{fund.process_img != 'https://bgbsk.cn/download/fund_material'}}">
+                        <image id='p1' style="width:700rpx;height:{{height}}rpx;" bindload='load' src='{{fund.process_img}}' mode='aspectFit' data-src='{{fund.process_img}}'></image>
+                    </view>
+                    <view wx:if="{{fund.process_text != ''}}">
+                    <view >
+                            <text >{{fund.process_text}}</text>
+                        </view>
+                        <!-- <view id='a2'>
+                            <text >{{fund.process_text}}</text>
+                        </view> -->
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view id='e4' wx:if="{{fund.contact != ''}}">联系方式：</view>
+        <view id='z2' wx:if="{{fund.contact != ''}}">
+            <view>
+                <text>{{fund.contact}}</text>
+            </view>
+        </view>
+
+
+        <view wx:if="{{fund.form != ''}}">
+            <view id='e5'>申请表（点击复制链接）:</view>
+            <view bindtap='copy'>
+                <view id='c2' bindtap='copy'>
+                    <text>{{fund.form}}</text>
+                    <!-- <view>点击复制链接</view> -->
+                </view>
+            </view>
+        </view>
+        <view>
+            <button id='shoucang' bindtap='collect' open-type='getUserInfo'>
+                <view wx:if="{{collectOrNot}}">收藏此基金</view>
+                <view wx:else>取消收藏</view>
+            </button>
+            <view id='m1'>|</view>
+        </view>
+    </view>
+</view>

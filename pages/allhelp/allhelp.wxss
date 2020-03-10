@@ -1,0 +1,46 @@
+/* pages/allhelp/allhelp.wxss */
+page{
+    background-color: rgb(239, 239, 252);
+    
+}
+
+
+
+#p1{
+    height: 80rpx;
+    width: 80rpx;
+    float: right;
+    padding-right: 30rpx;
+    padding-top: 20rpx;
+}
+#t1{
+    font: bolder;
+    font-size: larger;
+    line-height: 120rpx;
+    padding-left: 30rpx;
+}
+
+#a{
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    margin-bottom: 30rpx;
+    margin-top: 30rpx;
+    border-radius: 30rpx;
+    
+    background-color: #f5ac64;
+}
+
+
+#s1{
+     font: bolder;
+    font-size: larger;
+    line-height: 120rpx;
+    padding-left: 30rpx;
+     margin-left: 30rpx;
+    margin-right: 30rpx;
+    margin-bottom: 30rpx;
+    margin-top: 30rpx;
+    border-radius: 30rpx;
+    
+    background-color: #f5ac64;
+}

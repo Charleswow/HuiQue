@@ -1,0 +1,94 @@
+<!-- 搜索框 -->
+<view>
+    <view class="weui-search-bar">
+        <view class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                <input class="weui-search-bar__input" placeholder='请输入病名' bindinput='input' />
+                <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                    <icon type="clear" size="14"></icon>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!-- <view id='q1'class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input id='w1' class="weui-search-bar__input" placeholder='请输入病名' bindinput='input'>
+       
+        </input>
+        
+        <!-- <image id='q2' src='../images/sousuo.png'></image> -->
+
+
+    <!-- </view> -->
+                        
+    <view hidden="{{hidden}}">
+        暂无相关疾病信息
+    </view>
+    <view>
+        <view wx:for="{{check}}" wx:for-item="fundClass">
+            <view id='b1'>
+                <navigator url='../fundclassdetail/fundclassdetail?name={{fundClass.name}}'>
+                    <view id='b2'>
+                        <image id='c1' src='{{fundClass.img}}'></image>
+                        <text id='c2'>{{fundClass.name}}\n</text>
+                        <text id='c3'>{{fundClass.num}}条基金信息</text>
+                        <image id='c4' src='../images/jiantoushen.png'></image>
+                    </view>
+                    <!-- <image id='s2' src="../images/icon_arrow_right.svg"></image> -->
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>
+<view>
+    <view class="loading-modal" wx:if="{{showornot}}">
+        <view class="loading-text-wrap">
+            <image src="../images/loading.gif" class="load_img"></image>
+            <view class="loading-text">loading...</view>
+        </view>
+    </view>
+    <view wx:else>
+        <view>
+            <view id='a1'>基金信息</view>
+            <view id='a2'>{{fundclass.length}}大病种/{{NUM}}条常见信息整合</view>
+
+        </view>
+        <view wx:for="{{fundclass}}" wx:for-item="fundClass">
+            <view id='b1'>
+                <navigator url='../fundclassdetail/fundclassdetail?name={{fundClass.name}}'>
+                    <view id='b2'>
+                        <image id='c1' src='{{fundClass.img}}'></image>
+                        <text id='c2'>{{fundClass.name}}\n</text>
+                        <text id='c3'>{{fundClass.num}}条基金信息</text>
+                        <image id='c4' src='../images/jiantoushen.png'></image>
+                    </view>
+                    <!-- <image id='s2' src="../images/icon_arrow_right.svg"></image> -->
+                </navigator>
+            </view>
+        </view>
+    </view>
+    <view>
+        <view>
+            <view id='a1'>申请帮助</view>
+            <view id='a2'>灰雀志愿者专人帮助/迅速回复/帮助申请</view>
+        </view>
+
+        <navigator id='b1' url='../help/help'>
+            <image id='c1' src="../images/chou.png">这里是logo</image>
+            <text id='c2'>代写轻松筹/水滴筹\n</text>
+            <text id='c3'>仅为部分人服务</text>
+
+            <image id='c4' src='../images/jiantoushen.png'></image>
+        </navigator>
+        <navigator id='b1' url='../help/help'>
+            <image id='c1' src="../images/shen.png">这里是logo</image>
+            <text id='c2'>帮助申请基金\n</text>
+            <text id='c3'>仅为部分人服务</text>
+            <image id='c4' src='../images/jiantoushen.png'></image>
+        </navigator>
+
+
+    </view>
+</view>

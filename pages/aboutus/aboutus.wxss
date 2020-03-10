@@ -1,0 +1,34 @@
+/* pages/aboutus/aboutus.wxss */
+
+/* #a1,#a2,#a3,#a4{
+
+      margin-top: 30rpx;
+    margin-left: 10rpx;
+    padding-left: 10rpx;
+    border-left: 10rpx solid #54c973;
+} */
+.break{
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+#a1, #a2, #a4 {
+    margin-top: 40rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    padding-left: 15rpx;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    border-radius: 15rpx;
+    background-color: white;
+}
+
+#a3, #t1, #t2 {
+    margin-top: 40rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    padding-left: 15rpx;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    border-left: 10rpx solid #54c973;
+}
