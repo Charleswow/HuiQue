@@ -15,6 +15,12 @@ A non-profit WeChat applet, belonging to the  HuiQue
 
 **公益之路且长，且难，我们将一路前行，永不停息。**
 
+### 所获部分荣誉
+![92c6856ef53f02e773602f21ca54285.jpg](https://i.loli.net/2020/03/10/R8vchrsAl7jdFSV.jpg)
+![01e816c325f3a2805ddd76c38454299.jpg](https://i.loli.net/2020/03/10/y9L6oYCUBa4pOM1.jpg)
+
+## 小程序展示
+
 #### 基金界面与帮扶界面展示
 ![0ba77bd70a72816460238a112eb7554.png](https://i.loli.net/2020/03/10/Ccxw6vDP9hIVTKa.png)
 ![e5d8eb51cb8b8e9ebdbb224f20f0179.png](https://i.loli.net/2020/03/10/DlcE93q7b6XRYPg.png)
